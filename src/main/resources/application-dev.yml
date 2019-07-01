@@ -1,0 +1,16 @@
+# 配置當前應用的端口號與上下文路徑server:
+server:
+  port: 8888
+  servlet:
+    context-path: /test # 設置當前應用上下文路徑
+
+  tomcat:
+    uri-encoding: utf-8 # Tomcat 預設編碼
+
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/testQuery?useUnicode=true&characterEnoding=utf8
+    username: root
+    password: root
